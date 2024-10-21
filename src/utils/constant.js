@@ -12,7 +12,7 @@ export const IMG_LOGO="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-
 
 export const IMG_PROFILE="https://yt3.ggpht.com/yti/ANjgQV-LR4dpLZlhq-sTqBLg51bwG5NSY6Z-V-yYtD6xbP4=s88-c-k-c0x00ffffff-no-rj-mo";
 
-const GOOGLE_API_KEY="AIzaSyBWMwxsnNRJ58EylgduxYaHhgtdnQb8GOk";
+const GOOGLE_API_KEY="";
 
 
 export const YOUTUBE_VIDEOS_API="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&key="+GOOGLE_API_KEY;
