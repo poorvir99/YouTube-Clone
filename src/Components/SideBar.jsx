@@ -3,21 +3,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHouse, faClockRotateLeft ,faPlay, faClock,faThumbsUp,faFire,faBagShopping, faMusic, faVideo, faFilm, faGamepad, faTrophy, faPodcast, faBasketShopping, faRss, faLayerGroup, faListCheck, faGear, faQuestion} from '@fortawesome/free-solid-svg-icons';
 import { faCommentDots, faFlag, faNewspaper } from '@fortawesome/free-regular-svg-icons';
 import { IMG_SUB1_URL,IMG_SUB2_URL, IMG_SUB3_URL } from '../utils/constant';
-import { useSelector } from 'react-redux';
+
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 const SideBar=()=>{
 
-    const isMenuOpen =useSelector(store=>store.app.isMenuOpen)
+    const isMenuOpen =useSelector(store=>store.app.isMenuOpen);
+    
     //early return pattern
     if(!isMenuOpen) return null;
 
     return(
         <div className='p-5 w-64 pt-0 mt-0 cursor-pointer fixed top-15 left-0 h-screen overflow-y-auto  no-scrollbar bg-white'>
             <ul>
-                <div className='flex items-center hover:bg-[#e9e9e9f7] hover:rounded-md px-3'><FontAwesomeIcon icon={faHouse} /><li className='px-5 py-3'><Link to="/">Home</Link></li></div>
-                <div className='flex items-center hover:bg-[#e9e9e9f7] hover:rounded-md  px-3'><FontAwesomeIcon icon={faVideo} /><li className='px-5 py-3'><Link to="https://www.youtube.com/shorts/hq7EJRgJXog">Shorts</Link></li></div>
-                <div className='flex items-center hover:bg-[#e9e9e9f7] hover:rounded-md  px-3'><FontAwesomeIcon icon={faLayerGroup} /><li className='px-5 pt-3 pb-5'><Link to="https://www.youtube.com/feed/subscriptions">Subscriptions</Link></li></div> 
+                <div className='flex items-center hover:bg-[#e9e9e9f7] hover:rounded-md px-3'>
+                    <FontAwesomeIcon icon={faHouse} className={`${isMenuOpen ? 'text-xl' : 'text-sm'}`} />
+                    <li className={`${isMenuOpen ? 'px-5 py-3' : 'px-2 py-1'}`}><Link to="/">Home</Link></li>
+                </div>
+                <div className='flex items-center hover:bg-[#e9e9e9f7] hover:rounded-md  px-3'>
+                    <FontAwesomeIcon icon={faVideo} /><li className='px-5 py-3'>
+                    <Link to="https://www.youtube.com/shorts/hq7EJRgJXog">Shorts</Link></li>  
+                </div>
+                <div className='flex items-center hover:bg-[#e9e9e9f7] hover:rounded-md  px-3'>
+                    <FontAwesomeIcon icon={faLayerGroup} /><li className='px-5 pt-3 pb-5'>
+                    <Link to="https://www.youtube.com/feed/subscriptions">Subscriptions</Link></li>
+                </div> 
             </ul>
             <hr></hr>
             
