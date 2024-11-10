@@ -87,6 +87,7 @@ const SideBar=()=>{
                     <p className='text-sm pt-3 px-3 text-[#808080] font-semibold'><Link to="https://www.youtube.com/t/contact_us/">About Press Copyright Contact us Creators Advertise Developers</Link> </p>
                     <p className='text-sm pt-3 px-3 text-[#808080] font-semibold'><Link to="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"> Terms Privacy Policy & Safety How YouTube works Test new features</Link></p>
                     <p className='text-xs pt-3 text-[#A0A0A0] px-3 font-semibold '>© 2024 Google LLC</p>
+                    <p className='text-xs pt-3 text-[#A0A0A0] px-3 font-semibold '>Clone by <Link to="https://github.com/poorvir99/YouTube-Clone"><span className='text-black'>Poorvi R</span></Link></p>
                 </div>
             
         </div>

@@ -11,7 +11,7 @@ const Head=()=>{
       dispatch(toggleMenu())
   }
     return(
-        <div className="grid grid-flow-col items-center mt-0 fixed top-0 left-0 right-0 bg-white z-100">
+        <div className="grid grid-flow-col items-center mt-0 fixed top-0 right-0 left-0 z-50 bg-white">
            <div className="flex p-2 col-span-1 items-center pb-0 pt-0">
            
               <img 
